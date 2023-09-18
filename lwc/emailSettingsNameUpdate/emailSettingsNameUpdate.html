@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-size_1-of-3">
+            <lightning-card>
+                <div class="slds-m-horizontal_medium slds-m-vertical_medium">
+                    Current name: {currentName}
+                </div>
+                <div class="slds-m-horizontal_medium slds-m-vertical_medium">
+                    <lightning-input type="text" label="Enter new name" onchange={handleInputChange}></lightning-input>
+                </div>
+                <div class="slds-m-horizontal_medium slds-m-vertical_medium">
+                    <lightning-button variant="brand" label="Save" onclick={handleSave}></lightning-button>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>
